@@ -1,14 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
+void hollow_rectangle(int l, int w)
 {
-
-    int l, w;
-    cout << "Enter the length of rectangle : ";
-    cin >> l;
-    cout << "Enter the width of rectangle : ";
-    cin >> w;
 
     for (int i = 1; i <= l; i++)
     {
@@ -20,8 +14,20 @@ int main()
             else
                 cout << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
+}
+
+int main()
+{
+
+    int l, w;
+    cout << "Enter the length of rectangle : ";
+    cin >> l;
+    cout << "Enter the width of rectangle : ";
+    cin >> w;
+
+    hollow_rectangle(l, w);
 
     return 0;
 }
